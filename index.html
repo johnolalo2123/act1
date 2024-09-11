@@ -1,0 +1,43 @@
+<?php
+$members = array(
+    array(
+        'name' => 'Cedric Sado',
+        'picture' => 'Ced.png',
+        'favorite_food' => 'Pizza',
+        'age' => 22
+    ),
+    array(
+        'name' => 'John Olalo',
+        'picture' => 'OLALO.png.jfif',
+        'favorite_food' => 'Chicharon',
+        'age' => 21
+    ),
+    array(
+        'name' => 'Nico Navarro',
+        'picture' => 'Navarro.png',
+        'favorite_food' => 'Milktea',
+        'age' => 21
+    ),
+    array(
+        'name' => 'Kayla Montilla',
+        'picture' => 'Montilla.png',
+        'favorite_food' => 'Adobo',
+        'age' => 21
+    ),
+    array(
+        'name' => 'Andrea Castillo',
+        'picture' => 'Castillo.png',
+        'favorite_food' => 'Proben',
+        'age' => 20
+    )
+);
+
+foreach ($members as $member) {
+    echo "<div style='float:left;margin:10px'>";
+    echo "<img src='pictures/$member[picture]' alt='$member[name]' width='100'>";
+    echo "<h2>$member[name]</h2>";
+    echo "<p>Favorite food: $member[favorite_food]</p>";
+    echo "<p>Age: $member[age]</p>";
+    echo "</div>";
+}
+?>
